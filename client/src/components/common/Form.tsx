@@ -20,6 +20,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
             required
             id="outlined-basic"
             color="info"
+            inputProps={{ style: { color: 'black' } }}
             variant="outlined"
             {...register('title', { required: true })}
           />
@@ -54,6 +55,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
               color="info"
               displayEmpty
               required
+              sx={{ color: 'black' }}
               inputProps={{ 'aria-label': 'Without label' }}
               defaultValue="apartment"
               {...register('propertyType', { required: true })}
@@ -77,6 +79,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
               id="outlined-basic"
               variant="outlined"
               color="info"
+              inputProps={{ style: { color: 'black' } }}
               type="number"
               {...register('price', { required: true })}
             />
@@ -89,6 +92,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
             fullWidth
             required
             id="outlined-basic"
+            inputProps={{ style: { color: 'black' } }}
             variant="outlined"
             color="info"
             {...register('location', { required: true })}
